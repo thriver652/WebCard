@@ -1,55 +1,57 @@
 .leftsidebar {
- // width: 250px; /* Increased width for better readability */
-  padding: 20px;
+  $sidebar-width: 200px;
+  $sidebar-padding: 20px;
+  $icon-size: 20px;
+  $text-color: rgba(15, 66, 100, 1);
+  $text-hover-color: #007bff;
+
+  width: $sidebar-width;
+  padding: $sidebar-padding;
   display: flex;
   flex-direction: column;
- 
 
-  /* Cloudcash styling */
   .cloudcash-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
- //   padding: 10px;
-    background-color: #fff; /* White background for cloudcash */
-    border-radius: 10px; /* Rounded corners */
-   
+    margin-bottom: $sidebar-padding;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: $sidebar-padding;
   }
 
   .cloudcash-icon {
-    width: 20px; /* Increased icon size */
-    margin-right: 15px;
+    width: $icon-size;
+    margin-right: $sidebar-padding / 2;
   }
 
   .cloudcash-text {
-    font-size: 18px; /* Larger font size */
-    color: #1a1a1a; /* Darker text color */
-    font-weight: bold; /* Bold text */
+    font-size: 18px;
+    color: $text-color;
+    font-weight: 700;
   }
 
-  /* Sidebar items */
   .sidebar-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 20px;
+    margin-top: $sidebar-padding;
   }
 
   .sidebar-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: $sidebar-padding / 2;
     cursor: pointer;
     transition: background-color 0.3s;
-    padding: 10px; /* Add padding for better spacing */
+    padding: $sidebar-padding / 2;
 
     &:hover {
-      background-color: #e5e5e5; /* Lighter background on hover */
+      background-color: rgba(240, 247, 255, 1);
     }
 
     .sidebar-icon {
-      width: 25px; /* Adjusted icon size */
-      margin-right: 15px;
+      width: $icon-size;
+      margin-right: $sidebar-padding / 2;
     }
 
     .sidebar-text {
@@ -59,18 +61,17 @@
     }
 
     &:hover .sidebar-text {
-      color: #007bff; /* Highlight text color on hover */
+      color: $text-hover-color;
     }
   }
 
-  /* Placend section */
   .placend {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: auto;
-    margin-bottom: 20px;
-    margin-right: 50px;
+    margin-bottom: $sidebar-padding;
+    margin-right: $sidebar-padding * 2;
   }
 
   .image-container {
@@ -80,7 +81,7 @@
   }
 
   img {
-    margin-bottom: 10px;
+    margin-bottom: $sidebar-padding / 2;
   }
 
   @media screen and (max-width: 768px) {

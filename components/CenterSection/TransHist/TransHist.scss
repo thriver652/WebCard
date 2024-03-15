@@ -1,0 +1,33 @@
+.transhist-cont {
+  padding: 20px;
+  overflow-x: auto; /* Add horizontal scrolling for overflowing content */
+
+  .trans-txt {
+    font-size: 20.11px;
+    font-weight: 600;
+    margin-bottom: 20px; /* Add margin below the text */
+  }
+
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #ccc; /* Add border below each tbody row */
+    }
+
+    tbody tr:last-child {
+      border-bottom: none; /* Remove border below the last tbody row */
+    }
+  }
+}

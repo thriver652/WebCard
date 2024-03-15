@@ -6,18 +6,46 @@
   .weekly-sumup {
     font-size: 2.5em;
     font-weight: 600;
-    color: rgba(64, 64, 64, 1);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    color: #404040; /* Dark gray color */
+    margin-bottom: 10px; /* Add some bottom margin */
   }
 
   .get-summary {
     font-size: 1em;
-    color: rgba(174, 174, 174, 1);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    color: #aeaeae; /* Light gray color */
+    margin-bottom: 20px; /* Add more bottom margin */
+  }
+
+  .profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add gap between items */
+  }
+
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align text to the right */
+  }
+
+  .profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .profile-role {
+    font-size: 1em;
+    color: #777;
+  }
+
+  .icon-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  img {
+    width: 30px;
   }
 }
 
@@ -26,6 +54,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
+    align-items: center;
   }
 
   .get-summary {

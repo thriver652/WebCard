@@ -2,13 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   margin-top: 50px;
 }
 
 .card {
-  width: 400px;
-  height: 200px;
+  width: 450px; /* Increase width */
+  height: 300px; /* Increase height */
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 28px;

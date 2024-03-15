@@ -33,7 +33,12 @@ const TransHist = () => {
             <td>2024-03-15</td>
             <td>$500.00</td>
           </tr>
-        
+          <tr>
+            <td>John Doe</td>
+            <td>Deposit</td>
+            <td>2024-03-15</td>
+            <td>$500.00</td>
+          </tr>
         </tbody>
       </table>
     </div>

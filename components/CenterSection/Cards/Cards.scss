@@ -1,0 +1,19 @@
+.cards-container {
+  padding: 20px;
+}
+
+.row-container {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+}
+
+.text {
+  flex: 1; /* Allow the "Hello" texts to grow and fill available space */
+  text-align: center; /* Center align the text */
+}
+
+.card-image {
+  max-width: 100%; /* Ensure the image does not exceed its container width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 10px; /* Adjust horizontal margin for spacing */
+}

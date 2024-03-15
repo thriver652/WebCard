@@ -6,7 +6,7 @@
 
 .row {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   margin-bottom: 20px;
 
   @media screen and (max-width: 1024px) {
@@ -15,7 +15,7 @@
 }
 
 .card {
-  width: 396.66px; /* Width of the card */
+  width: 496.66px; /* Width of the card */
   height: 363.12px; /* Height of the card */
   margin: 0 10px; /* Adjust horizontal margin */
   border-radius: 28px; /* Rounded corners */
@@ -26,10 +26,10 @@
   ); /* Background gradient */
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.04),
     0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 16px 24px 0px rgba(0, 0, 0, 0.06); /* Shadow */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
 
   @media screen and (max-width: 1024px) {
     width: calc(50% - 20px); /* Two cards per row with spacing */

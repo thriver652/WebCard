@@ -1,5 +1,5 @@
 import React from "react";
-import "./TopSection.scss"; // Import the SCSS file
+import "./TopSection.scss";
 
 const TopSection = () => {
   return (

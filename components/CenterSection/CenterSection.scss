@@ -2,11 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  margin-top: 50px;
 }
 
 .card {
-  width: calc(50% - 10px);
-  height: 36px;
+  width: 400px;
+  height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 28px;
   background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
   margin-bottom: 20px;

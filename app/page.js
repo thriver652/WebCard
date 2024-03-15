@@ -6,7 +6,7 @@ import CenterSection from "@/components/CenterSection/CenterSection";
 
 function App() {
   return (
-    <div className="container">
+    <div className="main-container">
       <div className="sidebar">
         <LeftSidebar />
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./CenterSection.scss"; // Import the SCSS file
+import "./CenterSection.scss";
 
 const CenterSection = () => {
   return (

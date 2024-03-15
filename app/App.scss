@@ -1,37 +1,25 @@
-.container {
-  margin-top: 25px;
+.main-container {
   display: flex;
-  background: linear-gradient(
-    121.32deg,
-    #ffffff 10.96%,
-    #ffffff 72%,
-    #ffffff 99.98%
-  );
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 80%; /* Adjusted width */
+  height: 80%; /* Adjusted height */
+  margin: 5% auto; /* Center the container vertically and horizontally */
+  padding: 20px;
   border-radius: 59px;
-  border-width: 1px;
-  width: 94%;
-  max-width: 1200px;
-  height: 90vh;
-  margin: auto;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04),
-    0px 16px 24px 0px rgba(0, 0, 0, 0.04), 0px 24px 32px 0px rgba(0, 0, 0, 0.04);
-  padding: 20px; /* Add padding to the container */
+    0px 16px 24px 0px rgba(0, 0, 0, 0.04), 0px 24px 32px 0px rgba(0, 0, 0, 0.04); /* Box shadow applied to the entire container */
 }
 
 .sidebar {
   width: 200px;
-  height: 100%;
-  flex: 0 0 auto;
-  padding-right: 20px;
-  background-color: #f0f0f0; /* Example background color */
+  padding: 20px;
+  border-radius: 20px; /* Rounded corners for the sidebar */
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   flex-grow: 1;
-  // padding-top: 20px; /* Add top padding to the content */
+  padding: 20px; /* Add padding for content */
 }
 
 .topbar {
@@ -39,6 +27,26 @@
 }
 
 .centersection {
-  flex-grow: 1;
-  padding-top: 20px; /* Add top padding to the center section */
+  padding-top: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 90%; /* Adjusted width for smaller screens */
+    height: auto; /* Set height to auto for smaller screens */
+    margin: 5% auto; /* Adjusted margin for smaller screens */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width on smaller screens */
+    border-radius: 0; /* Remove border-radius on smaller screens */
+    padding: 10px; /* Adjusted padding for smaller screens */
+    margin-bottom: 10px; /* Added margin for separation */
+  }
+
+  .content {
+    flex-grow: 1; /* Allow content to grow on smaller screens */
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
 }
